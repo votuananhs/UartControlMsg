@@ -1,0 +1,21 @@
+{ "UartControlMsg":
+	{ "ConfigUart": [
+			{
+				"port": "/dev/ttyUSB0",
+				"baudrate" : "115200",
+				"bytesize" : "EIGHTBITS",
+				"parity" : "PARITY_NONE",
+				"stopbits" : "STOPBITS_ONE"
+			}
+		],
+		"MessageFrame": [
+			{
+				"start_char" : "x",
+				"len_start_char" : "1",
+				"led_data" : "10",
+				"end_char" : "y",
+				"led_end_char" : "1"
+			}
+		]
+	}
+}
