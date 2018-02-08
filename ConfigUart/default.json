@@ -1,21 +1,16 @@
 { "UartControlMsg":
-	{ "ConfigUart": [
+	{ "ConfigUart":
 			{
-				"port": "/dev/ttyUSB0",
+				"port": "/dev/tty.SLAB_USBtoUART2",
 				"baudrate" : "115200",
-				"bytesize" : "EIGHTBITS",
-				"parity" : "PARITY_NONE",
-				"stopbits" : "STOPBITS_ONE"
-			}
-		],
-		"MessageFrame": [
+				"bytesize" : "8",
+				"parity" : "serial.PARITY_NONE",
+				"stopbits" : "serial.STOPBITS_ONE"
+			},
+		"MessageFrame":
 			{
-				"start_char" : "x",
-				"len_start_char" : "1",
-				"led_data" : "10",
-				"end_char" : "y",
-				"led_end_char" : "1"
+				"start_char" : "~",
+				"end_char" : "~"
 			}
-		]
 	}
 }
